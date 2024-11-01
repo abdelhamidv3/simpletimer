@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.timer-container {
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e32b2b;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #3af11e;
+    cursor: not-allowed;
+
+}
+
+button:hover {
+    background-color: #263af4;
+}
+
+/* Animation styles */
+.timer-display span {
+    transition: all 0.5s ease-in-out;
+}
+
+.timer-display span.animate {
+    transform: scale(1.5);
+    color: #ff69b4;
+}
